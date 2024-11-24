@@ -27,8 +27,16 @@ export default tseslint.config(
 		settings: {
 			'import/resolver': {
 				alias: {
-					map: [['@components', './src/components']],
-					extensions: ['.js', '.jsx', '.ts', '.tsx'],
+					map: [
+						['@components', './src/components'],
+						['@views', './src/views'],
+						['@global/styles', './src/styles'],
+					],
+				},
+				extensions: {
+					'@components': ['.js', '.jsx', '.ts', '.tsx'],
+					'@views': ['.js', '.jsx', '.ts', '.tsx'],
+					'@global/styles': ['.css', '.scss'],
 				},
 			},
 		},
