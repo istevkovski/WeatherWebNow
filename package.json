@@ -10,8 +10,10 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"motion": "^11.11.17",
 		"react": "19.0.0-rc.1",
-		"react-dom": "19.0.0-rc.1"
+		"react-dom": "19.0.0-rc.1",
+		"recoil": "^0.7.7"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.13.0",
@@ -28,6 +30,8 @@
 	},
 	"overrides": {
 		"@types/react": "npm:types-react@rc",
-		"@types/react-dom": "npm:types-react-dom@rc"
+		"@types/react-dom": "npm:types-react-dom@rc",
+		"react": "$react",
+		"react-dom": "$react-dom"
 	}
 }
